@@ -1,3 +1,9 @@
+
+
+
+
+
+<!--Lista de proveedores-->
 <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
     <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
       <caption
@@ -36,17 +42,17 @@
           <td class="px-6 py-4">{{ supplier.country }}</td>
           <td class="px-6 py-4">{{ supplier.annualTurnover }}</td>
           <td class="px-6 py-4 text-right">
-            <a
-              href="#"
-              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-
-              >Editar</a
-            >
+            <button
+        class="font-medium text-red-600 dark:text-red-500 hover:underline"
+        (click)="deleteSupplier(supplier.idSupplier)"
+      >
+        Eliminar
+      </button>
           </td>
         </tr>
       </tbody>
     </table>
-  </div>
+</div>
   
   <app-footer></app-footer>
   

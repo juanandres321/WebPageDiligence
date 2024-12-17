@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient,HttpHeaders  } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Supplier } from '../interfaces/supplier';
 
@@ -30,8 +30,10 @@ export class SupplierService {
   }
 
   deleteSupplier(id: number): Observable<any> {
-    return this.http.delete(this.AppUrl + this.ApiUrl + id);
-  }
+    return this.http.delete(`${this.AppUrl}${this.ApiUrl}DeleteSupplier`, { 
+        params: { id: id.toString() }
+    });
+}
 
   getAllScrapper(company: string): Observable<any> {
     return this.http.get(`${this.AppUrl + this.ApiUrl2 + 'buscar/' + company}`);
