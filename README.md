@@ -1,27 +1,50 @@
-# Suppliers
+# WebPageDiligence - Proyecto Angular 18
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.8.
+## Descripción
 
-## Development server
+`WebPageDiligence` es una aplicación web desarrollada con Angular 18.
+## Requisitos previos
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Antes de comenzar, asegúrate de que tienes instalados los siguientes requisitos:
 
-## Code scaffolding
+### 1. Node.js
+Debes tener Node.js instalado en tu sistema. Puedes descargar e instalar Node.js desde su sitio web oficial: [https://nodejs.org/](https://nodejs.org/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### 2. npm
+Node Package Manager, que se instala automáticamente con Node.js, es necesario para manejar las dependencias del proyecto.
 
-## Build
+## Instalación
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clonar el repositorio:**
+   ```sh
+   git clone https://github.com/juanandres321/WebPageDiligence.git
+   ```
 
-## Running unit tests
+2. **Navegar al directorio del proyecto:**
+   ```sh
+   cd SUPPLIERS
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. **Instalar las dependencias:**
+   ```sh
+   npm install
+   ```
 
-## Running end-to-end tests
+4. **Iniciar el proyecto:**
+   ```sh
+   ng serve --open
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   Esto abrirá la aplicación en tu navegador predeterminado.
 
-## Further help
+## Uso
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Después de clonar el proyecto y de instalar las dependencias, puedes comenzar a desarrollar y probar la aplicación localmente.
+
+1. **Ejecutar la aplicación:**
+   ```sh
+   ng serve --open
+   ```
+
+   Esto iniciará el servidor de desarrollo de Angular y abrirá la aplicación en tu navegador web predeterminado.
+
